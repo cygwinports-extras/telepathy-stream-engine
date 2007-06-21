@@ -1,0 +1,71 @@
+telepathy-stream-engine
+------------------------------------------
+A Telepathy client that uses Farsight and GStreamer to handle media 
+streaming for channels with the MediaSignalling interface.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  farsight-0.1.20-1
+  glib2-2.12.12-1
+  gstreamer010-0.10.12-1
+  gstreamer010-plugins-base-0.10.12-1
+  libX11_6-1.1.1-1
+  libdbus-glib_1_2-0.73-1
+  libtelepathy2-0.0.55-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-1
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  bison-2.3-1
+  cygport-0.2.9-1
+  flex-2.5.33-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://telepathy.freedesktop.org/wiki/
+
+Canonical download:
+  http://telepathy.freedesktop.org/releases/stream-engine/
+
+-------------------------------------------
+
+Build instructions:
+  unpack telepathy-stream-engine-0.3.23-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./telepathy-stream-engine-0.3.23-X.cygport all
+
+This will create:
+  /usr/src/telepathy-stream-engine-0.3.23-X-src.tar.bz2
+  /usr/src/telepathy-stream-engine-0.3.23-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/telepathy-stream-engine.exe
+  /usr/share/dbus-1/services/org.freedesktop.Telepathy.StreamEngine.service
+  /usr/share/doc/Cygwin/telepathy-stream-engine-0.3.23.README
+  /usr/share/doc/telepathy-stream-engine-0.3.23/COPYING
+  /usr/share/doc/telepathy-stream-engine-0.3.23/ChangeLog
+  /usr/share/doc/telepathy-stream-engine-0.3.23/INSTALL
+  /usr/share/doc/telepathy-stream-engine-0.3.23/TODO
+
+------------------
+
+Port Notes:
+
+----- version 0.3.23-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
