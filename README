@@ -5,12 +5,15 @@ streaming for channels with the MediaSignalling interface.
 
 Runtime requirements:
   cygwin-1.5.24-2
-  farsight-0.1.20-1
-  glib2-2.12.12-1
-  gstreamer010-0.10.12-1
-  gstreamer010-plugins-base-0.10.12-1
+  glib2-2.12.13-1
+  gstreamer010-0.10.13-1
+  gstreamer010-plugins-base-0.10.13-1
+  gstreamer010-plugins-gconf
+  gstreamer010-plugins-oss
+  gstreamer010-plugins-ximage
   libX11_6-1.1.1-1
   libdbus-glib_1_2-0.73-1
+  libfarsight01-0.1.21-1
   libtelepathy2-0.0.55-1
 
 Build requirements:
@@ -20,7 +23,7 @@ Build requirements:
   automake1.9-1.9.6-2
   binutils-20060817-1
   bison-2.3-1
-  cygport-0.2.9-1
+  cygport-0.3.5-1
   flex-2.5.33-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
