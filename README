@@ -4,31 +4,30 @@ A Telepathy client that uses Farsight and GStreamer to handle media
 streaming for channels with the MediaSignalling interface.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  glib2-2.12.13-1
-  gstreamer010-0.10.13-1
-  gstreamer010-plugins-base-0.10.13-1
+  cygwin-1.5.25-15
+  glib2-2.16.3-1
+  gstreamer010-0.10.20-1
+  gstreamer010-plugins-base-0.10.20-1
   gstreamer010-plugins-gconf
   gstreamer010-plugins-oss
   gstreamer010-plugins-ximage
-  libX11_6-1.1.1-1
-  libdbus-glib_1_2-0.73-1
-  libfarsight01-0.1.21-1
-  libtelepathy2-0.0.55-1
+  libdbus-glib_1_2-0.74-1
+  libfarsight0.1_3-0.1.28-1
+  libtelepathy-glib0-0.7.10-1
+  libX11_6-1.1.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-1
   autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  bison-2.3-1
-  cygport-0.3.5-1
-  flex-2.5.33-1
-  gawk-3.1.5-4
+  automake1.10-1.10.1-1
+  binutils-20080523-1
+  cygport-0.3.11-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
+  gnome-common-2.20.0-2
+  libtool-2.2.2-2
   make-3.81-1
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical website:
@@ -40,31 +39,35 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack telepathy-stream-engine-0.3.23-X-src.tar.bz2
+  unpack telepathy-stream-engine-0.5.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./telepathy-stream-engine-0.3.23-X.cygport all
+  cygport ./telepathy-stream-engine-0.5.3-X.cygport all
 
 This will create:
-  /usr/src/telepathy-stream-engine-0.3.23-X-src.tar.bz2
-  /usr/src/telepathy-stream-engine-0.3.23-X.tar.bz2
+  /usr/src/telepathy-stream-engine-0.5.3-X-src.tar.bz2
+  /usr/src/telepathy-stream-engine-0.5.3-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
-  /usr/bin/telepathy-stream-engine.exe
+  /usr/sbin/telepathy-stream-engine.exe
   /usr/share/dbus-1/services/org.freedesktop.Telepathy.StreamEngine.service
-  /usr/share/doc/Cygwin/telepathy-stream-engine-0.3.23.README
-  /usr/share/doc/telepathy-stream-engine-0.3.23/COPYING
-  /usr/share/doc/telepathy-stream-engine-0.3.23/ChangeLog
-  /usr/share/doc/telepathy-stream-engine-0.3.23/INSTALL
-  /usr/share/doc/telepathy-stream-engine-0.3.23/TODO
+  /usr/share/doc/telepathy-stream-engine-0.5.3/COPYING
+  /usr/share/doc/telepathy-stream-engine-0.5.3/ChangeLog
+  /usr/share/doc/telepathy-stream-engine-0.5.3/INSTALL
+  /usr/share/doc/telepathy-stream-engine-0.5.3/NEWS
+  /usr/share/doc/telepathy-stream-engine-0.5.3/README
+  /usr/share/doc/telepathy-stream-engine-0.5.3/TODO
 
 ------------------
 
 Port Notes:
+
+----- version 0.5.3-1 -----
+Version bump.
 
 ----- version 0.3.23-1 -----
 Initial release for Cygwin.
