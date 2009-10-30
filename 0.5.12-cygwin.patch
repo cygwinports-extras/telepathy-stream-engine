@@ -1,0 +1,22 @@
+--- origsrc/telepathy-stream-engine-0.5.12/src/audiostream.c	2009-10-21 08:54:40.000000000 -0500
++++ src/telepathy-stream-engine-0.5.12/src/audiostream.c	2009-10-30 01:00:53.737745500 -0500
+@@ -475,6 +475,8 @@ src_pad_added_cb (TfStream *stream, GstP
+     sink = gst_parse_bin_from_description (g_getenv ("FS_AUDIO_SINK"), TRUE,
+         NULL);
+   if (!sink)
++    sink = gst_element_factory_make ("autoaudiosink", NULL);
++  if (!sink)
+     sink = gst_element_factory_make ("pulsesink", NULL);
+ 
+   if (!gst_bin_add (GST_BIN (self->priv->bin), sink))
+--- origsrc/telepathy-stream-engine-0.5.12/src/stream-engine-main.c	2009-10-26 11:18:49.000000000 -0500
++++ src/telepathy-stream-engine-0.5.12/src/stream-engine-main.c	2009-10-30 00:29:24.239916700 -0500
+@@ -224,7 +224,7 @@ int main(int argc, char **argv)
+   GOptionContext *optcontext;
+   GError *error = NULL;
+ 
+-#ifdef USE_REALTIME
++#ifdef USE_REALTIME_DISABLED
+   uid_t uid;
+   struct rlimit rl;
+ 

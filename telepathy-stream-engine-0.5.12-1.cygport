@@ -3,6 +3,6 @@ inherit gnome2
 DESCRIPTION="Telepathy streaming media client"
 HOMEPAGE="http://telepathy.freedesktop.org/wiki/"
 SRC_URI="http://telepathy.freedesktop.org/releases/stream-engine/${P}.tar.gz"
+PATCH_URI="0.5.12-cygwin.patch"
 
-# .pic files are missing from doc/
-CYGCONF_ARGS="--disable-seq-dias"
+CYGCONF_ARGS="--libexecdir=/usr/lib/telepathy"

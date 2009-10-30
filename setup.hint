@@ -1,5 +1,5 @@
 category: Audio Net Video
-requires: glib2 gstreamer010 gstreamer010-plugins-base gstreamer010-plugins-gconf gstreamer010-plugins-oss gstreamer010-plugins-ximage libX11_6 libdbus-glib_1_2 libfarsight0.1_3 libtelepathy-glib0
+requires: gstreamer0.10-plugins-base gstreamer0.10-plugins-farsight gstreamer0.10-plugins-gconf gstreamer0.10-plugins-good gstreamer0.10-plugins-oss gstreamer0.10-plugins-ximage libdbus-glib_1_2 libgcc1 libglib2.0_0 libgstfarsight0.10_0 libgstinterfaces0.10_0 libgstreamer0.10_0 libgstvideo0.10_0 libgtk2.0_0 libtelepathy-farsight0 libtelepathy-glib0
 sdesc: "Telepathy streaming media client"
 ldesc: "A Telepathy client that uses Farsight and GStreamer to handle 
 media streaming for channels with the MediaSignalling interface."
